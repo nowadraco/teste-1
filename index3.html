@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultados da Verificação</title>
+  <link rel="stylesheet" href="index2.css">
+  <style>
+    /* Estilos dos destaques do domínio */
+    .domain-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .domain-badge.badge-available {
+      background-color: #153326;
+      color: #4ade80;
+      border: 1px solid #1e523b;
+      box-shadow: 0 0 10px rgba(74, 222, 128, 0.15);
+    }
+    .domain-badge.badge-taken {
+      background-color: #381a1d;
+      color: #f87171;
+      border: 1px solid #5c2429;
+    }
+    .domain-badge.badge-special {
+      background-color: #382c14;
+      color: #fbbf24;
+      border: 1px solid #6b4f17;
+    }
+    .domain-badge.badge-error {
+      background-color: #242833;
+      color: #a1abbc;
+      border: 1px solid #3b4455;
+    }
+
+    /* Cartão quando o domínio estiver 100% livre */
+    .result-row.is-available-highlight {
+      border: 1px solid #236846;
+      background-color: rgba(21, 51, 38, 0.35);
+    }
+
+    .card-header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .btn-site-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--bg-panel-subtle);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 6px 11px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .btn-site-link:hover {
+      border-color: var(--accent-orange);
+      color: #fff;
+    }
+    .grid-redes {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+      gap: 8px;
+      margin-top: 14px;
+      width: 100%;
+    }
+    .rede-tag {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 7px 10px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      background: var(--bg-input);
+      border: 1px solid var(--border-color);
+      text-decoration: none;
+      color: var(--text-main);
+      transition: transform 0.1s ease, border-color 0.15s ease;
+    }
+    .rede-tag:hover {
+      transform: translateY(-1px);
+    }
+    .rede-tag.available { border-color: #1e523b; color: #4ade80; }
+    .rede-tag.taken { border-color: #5c2429; color: #f87171; }
+    .rede-tag.unknown { border-color: #3b4455; color: #8b94a5; }
+  </style>
+</head>
+<body>
+
+<main class="app-shell">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">@</span>
+      <span>verificador<span style="color: #d87354;">.</span></span>
+    </div>
+    <button id="btn-atualizar" class="primary-button" style="margin:0;">
+      🔄 Carregar Resultados do Python
+    </button>
+  </header>
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Busca Otimizada para Registro</div>
+      <h1>Nomes <em>Verificados.</em></h1>
+      <p class="hero-copy">
+        Os domínios <strong>.com.br livres aparecem no topo primeiro</strong> para facilitar sua escolha. Clique em "Abrir site" para testar se já existe página no ar.
+      </p>
+    </div>
+  </section>
+
+  <div class="workspace" style="grid-template-columns: 1fr;">
+    <section class="panel compare-panel">
+      <div id="results-container" class="candidate-results">
+        <div class="empty-state">
+          <h3>Nenhum resultado carregado ainda</h3>
+          <p>Execute <code>python3 buscador.py</code> no terminal e clique no botão acima.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script>
+  // Configuração dos status de redes e domínios
+  const DOMAIN_STATUS_MAP = {
+    available: { 
+      label: "🟢 DOMÍNIO LIVRE", 
+      class: "badge-available",
+      isFree: true
+    },
+    taken: { 
+      label: "🔴 DOMÍNIO OCUPADO", 
+      class: "badge-taken",
+      isFree: false
+    },
+    special: { 
+      label: "🟡 EM PROCESSO / LIBERAÇÃO", 
+      class: "badge-special",
+      isFree: false
+    },
+    error: { 
+      label: "⚠️ ERRO AO CONSULTAR", 
+      class: "badge-error",
+      isFree: false
+    },
+    unknown: { 
+      label: "❓ INDEFINIDO", 
+      class: "badge-error",
+      isFree: false
+    }
+  };
+
+  const REDE_STATUS_MAP = {
+    available: { label: "Livre", class: "available" },
+    taken: { label: "Ocupado", class: "taken" },
+    special: { label: "Especial", class: "unknown" },
+    unknown: { label: "Indefinido", class: "unknown" },
+    redirect: { label: "Redireciona", class: "unknown" },
+    error: { label: "Erro", class: "taken" }
+  };
+
+  async function carregarResultados() {
+    const container = document.getElementById("results-container");
+    try {
+      const resp = await fetch(`resultados.json?t=${Date.now()}`);
+      if (!resp.ok) throw new Error("resultados.json não encontrado");
+      const dados = await resp.json();
+
+      if (!dados.length) {
+        container.innerHTML = '<div class="empty-state"><p>O arquivo resultados.json está vazio.</p></div>';
+        return;
+      }
+
+      container.innerHTML = "";
+
+      // Prioridade de ordenação: Livres (1), Especiais (2), Ocupados (3), Erros (4)
+      const pesoStatus = {
+        available: 1,
+        special: 2,
+        taken: 3,
+        error: 4,
+        unknown: 5
+      };
+
+      // Ordena a lista colocando os sites livres primeiro
+      const dadosOrdenados = [...dados].sort((a, b) => {
+        const pesoA = pesoStatus[a.registro_br] || 99;
+        const pesoB = pesoStatus[b.registro_br] || 99;
+        return pesoA - pesoB;
+      });
+
+      dadosOrdenados.forEach((item) => {
+        const brInfo = DOMAIN_STATUS_MAP[item.registro_br] || DOMAIN_STATUS_MAP.unknown;
+        const dominioMontado = `${item.nome}.com.br`;
+
+        let redesHtml = "";
+        for (const [rede, info] of Object.entries(item.redes)) {
+          const st = REDE_STATUS_MAP[info.status] || REDE_STATUS_MAP.unknown;
+          redesHtml += `
+            <a href="${info.url}" target="_blank" rel="noopener noreferrer" class="rede-tag ${st.class}" title="Abrir ${rede}">
+              <span>${rede}</span>
+              <strong>${st.label}</strong>
+            </a>
+          `;
+        }
+
+        const card = document.createElement("article");
+        // Se estiver livre, adiciona a classe de borda e fundo verde suave
+        card.className = `result-row ${brInfo.isFree ? 'is-available-highlight' : ''}`;
+        card.style.display = "flex";
+        card.style.flexDirection = "column";
+        card.style.alignItems = "stretch";
+        card.style.gap = "14px";
+
+        card.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 12px; flex-wrap: wrap; gap: 12px;">
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <code style="font-size: 1.25rem; font-weight: bold; color: var(--accent-orange);">${dominioMontado}</code>
+              <span class="domain-badge ${brInfo.class}">
+                ${brInfo.label}
+              </span>
+            </div>
+            
+            <div class="card-header-actions">
+              <a href="${item.site_url_br}" target="_blank" rel="noopener noreferrer" class="btn-site-link" title="Testar se o site abre">
+                Visitar .com.br ↗
+              </a>
+              <a href="${item.site_url_com}" target="_blank" rel="noopener noreferrer" class="btn-site-link" title="Testar se o site global abre">
+                Visitar .com ↗
+              </a>
+            </div>
+          </div>
+          
+          <div class="grid-redes">
+            ${redesHtml}
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    } catch (err) {
+      container.innerHTML = `
+        <div class="empty-state">
+          <h3>Nenhum resultado carregado</h3>
+          <p>Rode <code>python3 buscador.py</code> no terminal e clique no botão de atualizar.</p>
+        </div>
+      `;
+    }
+  }
+
+  document.getElementById("btn-atualizar").addEventListener("click", carregarResultados);
+  carregarResultados();
+</script>
+</body>
+</html>

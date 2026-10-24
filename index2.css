@@ -525,6 +525,18 @@ body {
   border: 1px solid var(--status-avail-border);
 }
 
+.status-option.checking {
+  background-color: #2b2718;
+  color: #fbbf24;
+  border: 1px solid #574116;
+  animation: pulse 1.2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
 .status-option.taken[aria-pressed="true"] {
   background-color: var(--status-taken-bg);
   color: var(--status-taken-text);

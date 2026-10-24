@@ -34,7 +34,8 @@
         Um @ que <em>fica.</em>
       </h1>
       <p class="hero-copy">
-        Adicione os nomes que pensou. O sistema faz a conferência sequencial automática de cada um no domínio ou na rede selecionada.
+        Compare suas ideias de nome, abra cada perfil e anote o que você
+        encontrou. Sem robôs, sem adivinhação — a escolha continua sendo sua.
       </p>
     </div>
     <div class="hero-stamp" aria-label="Ferramenta de conferência manual">
@@ -55,8 +56,37 @@
         <span class="count-pill" data-testid="text-candidate-count">03</span>
       </div>
 
-      <!-- Lista de Candidatos (preenchida dinamicamente pelo JS) -->
-      <ul class="candidate-list" aria-label="Nomes candidatos" id="candidate-list"></ul>
+      <!-- Lista de Candidatos -->
+      <ul class="candidate-list" aria-label="Nomes candidatos" id="candidate-list">
+        <li class="candidate-chip" data-testid="candidate-candidate-glitchhub">
+          <code>glitchhub</code>
+          <button class="remove-button" type="button" aria-label="Remover glitchhub" title="Remover glitchhub" data-testid="button-remove-candidate-glitchhub">
+            <!-- X Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+        </li>
+        <li class="candidate-chip" data-testid="candidate-candidate-voxelhub">
+          <code>voxelhub</code>
+          <button class="remove-button" type="button" aria-label="Remover voxelhub" title="Remover voxelhub" data-testid="button-remove-candidate-voxelhub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+        </li>
+        <li class="candidate-chip" data-testid="candidate-candidate-pixelcombo">
+          <code>pixelcombo</code>
+          <button class="remove-button" type="button" aria-label="Remover pixelcombo" title="Remover pixelcombo" data-testid="button-remove-candidate-pixelcombo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
 
       <!-- Formulário de Inserção -->
       <form class="add-form" id="add-candidate-form">
@@ -91,23 +121,160 @@
           <span class="platform-count" data-testid="text-platform-count">1 ativa</span>
         </div>
         <div class="platform-grid" role="group" aria-label="Selecionar plataformas">
-          <!-- Botões injetados dinamicamente com suporte a .com.br -->
+          <button class="platform-button" type="button" aria-pressed="true" aria-label="Remover YouTube" data-testid="button-platform-youtube">
+            <span class="platform-dot" aria-hidden="true"></span>
+            YouTube
+          </button>
+          <button class="platform-button" type="button" aria-pressed="false" aria-label="Selecionar GitHub" data-testid="button-platform-github">
+            <span class="platform-dot" aria-hidden="true"></span>
+            GitHub
+          </button>
+          <button class="platform-button" type="button" aria-pressed="false" aria-label="Selecionar Reddit" data-testid="button-platform-reddit">
+            <span class="platform-dot" aria-hidden="true"></span>
+            Reddit
+          </button>
+          <button class="platform-button" type="button" aria-pressed="false" aria-label="Selecionar Twitter (X)" data-testid="button-platform-twitter">
+            <span class="platform-dot" aria-hidden="true"></span>
+            Twitter (X)
+          </button>
+          <button class="platform-button" type="button" aria-pressed="false" aria-label="Selecionar Pinterest" data-testid="button-platform-pinterest">
+            <span class="platform-dot" aria-hidden="true"></span>
+            Pinterest
+          </button>
+          <button class="platform-button" type="button" aria-pressed="false" aria-label="Selecionar TikTok" data-testid="button-platform-tiktok">
+            <span class="platform-dot" aria-hidden="true"></span>
+            TikTok
+          </button>
+          <button class="platform-button" type="button" aria-pressed="false" aria-label="Selecionar Blogger" data-testid="button-platform-blogger">
+            <span class="platform-dot" aria-hidden="true"></span>
+            Blogger
+          </button>
+          <button class="platform-button" type="button" aria-pressed="false" aria-label="Selecionar WordPress" data-testid="button-platform-wordpress">
+            <span class="platform-dot" aria-hidden="true"></span>
+            WordPress
+          </button>
+          <button class="platform-button" type="button" aria-pressed="false" aria-label="Selecionar Tumblr" data-testid="button-platform-tumblr">
+            <span class="platform-dot" aria-hidden="true"></span>
+            Tumblr
+          </button>
+          <button class="platform-button" type="button" aria-pressed="false" aria-label="Selecionar Flickr" data-testid="button-platform-flickr">
+            <span class="platform-dot" aria-hidden="true"></span>
+            Flickr
+          </button>
         </div>
       </div>
 
       <!-- Cabeçalho da Plataforma Ativa + Botão Global -->
       <div class="active-platform-heading" style="display: flex; justify-content: space-between; align-items: center;">
         <div>
-          <h2 id="platform-heading">Domínio .com.br</h2>
-          <p>Verificação sequencial sem recarregar a tela.</p>
+          <h2 id="platform-heading">YouTube</h2>
+          <p>Abra os perfis um por vez e registre sua observação.</p>
         </div>
-        <button id="btn-executar-todos" class="primary-button" style="margin: 0; padding: 8px 14px; font-size: 0.8rem;">
-          ⚡ Verificar toda a lista
-        </button>
+        <span class="section-kicker">conferência manual</span>
       </div>
 
-      <!-- Lista de Resultados / Checagem Dinâmica -->
-      <div class="candidate-results" data-testid="list-results" id="results-container"></div>
+      <!-- Lista de Resultados / Checagem -->
+      <div class="candidate-results" data-testid="list-results" id="results-container">
+        <!-- Item 1: GlitchHub -->
+        <article class="result-row" data-testid="result-candidate-glitchhub-youtube" style="animation-delay: 0ms;">
+          <div class="result-name">
+            <code>glitchhub</code>
+            <a class="profile-url" href="https://www.youtube.com/@glitchhub" target="_blank" rel="noopener noreferrer" data-testid="link-profile-url-candidate-glitchhub">
+              www.youtube.com/@glitchhub
+            </a>
+          </div>
+          <div class="result-status">
+            <div class="status-label">Sua anotação</div>
+            <div class="status-control" role="group" aria-label="Resultado manual para glitchhub em YouTube">
+              <button class="status-option unknown" type="button" aria-pressed="true" aria-label="glitchhub: marcar como A verificar" data-testid="button-status-candidate-glitchhub-youtube-unknown">
+                A verificar
+              </button>
+              <button class="status-option available" type="button" aria-pressed="false" aria-label="glitchhub: marcar como Livre" data-testid="button-status-candidate-glitchhub-youtube-available">
+                Livre
+              </button>
+              <button class="status-option taken" type="button" aria-pressed="false" aria-label="glitchhub: marcar como Em uso" data-testid="button-status-candidate-glitchhub-youtube-taken">
+                Em uso
+              </button>
+            </div>
+          </div>
+          <div class="result-action">
+            <a class="open-profile" href="https://www.youtube.com/@glitchhub" target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil de glitchhub no YouTube em nova aba" data-testid="link-open-profile-candidate-glitchhub">
+              Abrir perfil
+              <!-- ArrowUpRight Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 7h10v10"></path>
+                <path d="M7 17 17 7"></path>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Item 2: VoxelHub -->
+        <article class="result-row" data-testid="result-candidate-voxelhub-youtube" style="animation-delay: 45ms;">
+          <div class="result-name">
+            <code>voxelhub</code>
+            <a class="profile-url" href="https://www.youtube.com/@voxelhub" target="_blank" rel="noopener noreferrer" data-testid="link-profile-url-candidate-voxelhub">
+              www.youtube.com/@voxelhub
+            </a>
+          </div>
+          <div class="result-status">
+            <div class="status-label">Sua anotação</div>
+            <div class="status-control" role="group" aria-label="Resultado manual para voxelhub em YouTube">
+              <button class="status-option unknown" type="button" aria-pressed="true" aria-label="voxelhub: marcar como A verificar" data-testid="button-status-candidate-voxelhub-youtube-unknown">
+                A verificar
+              </button>
+              <button class="status-option available" type="button" aria-pressed="false" aria-label="voxelhub: marcar como Livre" data-testid="button-status-candidate-voxelhub-youtube-available">
+                Livre
+              </button>
+              <button class="status-option taken" type="button" aria-pressed="false" aria-label="voxelhub: marcar como Em uso" data-testid="button-status-candidate-voxelhub-youtube-taken">
+                Em uso
+              </button>
+            </div>
+          </div>
+          <div class="result-action">
+            <a class="open-profile" href="https://www.youtube.com/@voxelhub" target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil de voxelhub no YouTube em nova aba" data-testid="link-open-profile-candidate-voxelhub">
+              Abrir perfil
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 7h10v10"></path>
+                <path d="M7 17 17 7"></path>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Item 3: PixelCombo -->
+        <article class="result-row" data-testid="result-candidate-pixelcombo-youtube" style="animation-delay: 90ms;">
+          <div class="result-name">
+            <code>pixelcombo</code>
+            <a class="profile-url" href="https://www.youtube.com/@pixelcombo" target="_blank" rel="noopener noreferrer" data-testid="link-profile-url-candidate-pixelcombo">
+              www.youtube.com/@pixelcombo
+            </a>
+          </div>
+          <div class="result-status">
+            <div class="status-label">Sua anotação</div>
+            <div class="status-control" role="group" aria-label="Resultado manual para pixelcombo em YouTube">
+              <button class="status-option unknown" type="button" aria-pressed="true" aria-label="pixelcombo: marcar como A verificar" data-testid="button-status-candidate-pixelcombo-youtube-unknown">
+                A verificar
+              </button>
+              <button class="status-option available" type="button" aria-pressed="false" aria-label="pixelcombo: marcar como Livre" data-testid="button-status-candidate-pixelcombo-youtube-available">
+                Livre
+              </button>
+              <button class="status-option taken" type="button" aria-pressed="false" aria-label="pixelcombo: marcar como Em uso" data-testid="button-status-candidate-pixelcombo-youtube-taken">
+                Em uso
+              </button>
+            </div>
+          </div>
+          <div class="result-action">
+            <a class="open-profile" href="https://www.youtube.com/@pixelcombo" target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil de pixelcombo no YouTube em nova aba" data-testid="link-open-profile-candidate-pixelcombo">
+              Abrir perfil
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 7h10v10"></path>
+                <path d="M7 17 17 7"></path>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
 
       <!-- Card Informativo / Guia -->
       <aside class="guidance" role="note" data-testid="note-manual-confirmation">
@@ -117,9 +284,11 @@
           <path d="M12 17h.01"></path>
         </svg>
         <div>
-          <strong>Consulta automatizada</strong>
+          <strong>Confirme por conta própria</strong>
           <p>
-            O teste do <strong>.com.br</strong> consulta a base oficial do Registro.br. Nas redes sociais, perfis que retornam 404 são apontados como livres. Clique no link "Abrir" para confirmar caso queira criar a conta.
+            Os links servem apenas para abrir os perfis manualmente. Uma
+            página que não carrega não confirma disponibilidade: a
+            plataforma pode reservar nomes ou aplicar regras próprias.
           </p>
         </div>
       </aside>
@@ -127,11 +296,16 @@
   </div>
 
   <footer class="footer-line">
-    <span>Verificador de nomes com fila sequencial automática.</span>
-    <span>Salvo localmente no seu navegador</span>
+    <span>Uma pequena ferramenta para escolher com calma.</span>
+    <span>Sem consultas automáticas · sem compartilhamento</span>
   </footer>
 </main>
 
+<script src="index02.js"></script>
+</body>
+</html>
+
+<!-- Script carregado no final para garantir que todo o DOM esteja pronto -->
 <script src="index02.js"></script>
 </body>
 </html>
