@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
   const STORAGE_KEY = 'verificador-nomes-workspace-v1';
-
-  // Usamos um proxy CORS para contornar o bloqueio nativo dos navegadores
   const CORS_PROXY = 'https://api.allorigins.win/raw?url=';
 
   const PLATFORMS = [
@@ -51,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const STATUS_LABELS = {
     unknown: 'A verificar',
-    checking: 'Verificando...',
+    checking: 'Consultando...',
     available: 'Livre',
     taken: 'Ocupado'
   };
@@ -63,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   let state = readWorkspace();
+  let emExecucao = false;
 
   // Seletores do DOM
   const candidateListEl = document.getElementById('candidate-list');
@@ -70,11 +69,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const addFormEl = document.getElementById('add-candidate-form');
   const candidateInputEl = document.getElementById('candidate-names');
   const formErrorEl = document.querySelector('[data-testid="status-add-error"]');
-  const platformButtons = document.querySelectorAll('.platform-button');
+  const platformGridEl = document.querySelector('.platform-grid');
   const platformCountEl = document.querySelector('[data-testid="text-platform-count"]');
   const activeHeadingEl = document.getElementById('platform-heading');
   const resultsContainerEl = document.getElementById('results-container');
   const storageStatusEl = document.getElementById('storage-status-text');
+
+  function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
 
   function readWorkspace() {
     try {
@@ -90,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
       }
     } catch (e) {
-      console.warn('Erro ao carregar localStorage', e);
+      console.warn('Erro ao ler LocalStorage', e);
     }
     return {
       candidates: INITIAL_CANDIDATES,
@@ -104,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
       if (storageStatusEl) storageStatusEl.textContent = 'Suas anotações ficam neste dispositivo';
     } catch {
-      if (storageStatusEl) storageStatusEl.textContent = 'Armazenamento indisponível';
+      if (storageStatusEl) storageStatusEl.textContent = 'Armazenamento local indisponível';
     }
   }
 
@@ -112,27 +115,32 @@ document.addEventListener('DOMContentLoaded', () => {
     return `${candidateId}::${platformId}`;
   }
 
-  // --- MOTOR DE CHECAGEM AUTOMÁTICA (FETCH) ---
+  // --- REQUISIÇÕES ---
 
-  // Checa disponibilidade no Registro.br
   async function testarRegistroBr(nome) {
     const apiUrl = `https://registro.br/v2/ajax/avail/raw/${encodeURIComponent(nome)}.com.br`;
     try {
-      const resp = await fetch(CORS_PROXY + encodeURIComponent(apiUrl));
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 6000);
+      const resp = await fetch(CORS_PROXY + encodeURIComponent(apiUrl), { signal: controller.signal });
+      clearTimeout(timeoutId);
+
       if (!resp.ok) return 'unknown';
       const data = await resp.json();
-      // status 0 = Disponível | 1 = Registrado | 2 = Em processo
       return data.status === 0 ? 'available' : 'taken';
     } catch {
       return 'unknown';
     }
   }
 
-  // Checa disponibilidade em redes sociais
   async function testarRede(platform, nome) {
     if (platform.id === 'github') {
       try {
-        const resp = await fetch(platform.apiUrl(nome));
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 6000);
+        const resp = await fetch(platform.apiUrl(nome), { signal: controller.signal });
+        clearTimeout(timeoutId);
+
         if (resp.status === 404) return 'available';
         if (resp.status === 200) return 'taken';
         return 'unknown';
@@ -141,10 +149,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // Para as demais redes usamos o proxy CORS
     const targetUrl = platform.url(nome);
     try {
-      const resp = await fetch(CORS_PROXY + encodeURIComponent(targetUrl));
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 7000);
+      const resp = await fetch(CORS_PROXY + encodeURIComponent(targetUrl), { signal: controller.signal });
+      clearTimeout(timeoutId);
+
       if (resp.status === 404) return 'available';
       if (resp.status === 200) return 'taken';
       return 'unknown';
@@ -153,11 +164,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Executa o teste de um candidato em uma plataforma específica
-  async function verificarAutomatico(candidate, platform) {
+  // Atualiza apenas a pílula do item no DOM sem recriar toda a página
+  function atualizarStatusVisual(candidateId, platformId, status) {
+    const badge = document.querySelector(`[data-status-badge="${candidateId}-${platformId}"]`);
+    if (badge) {
+      badge.className = `status-option ${status}`;
+      badge.textContent = STATUS_LABELS[status] || status;
+    }
+  }
+
+  // Checa 1 item individual
+  async function verificarItem(candidate, platform) {
     const key = getStatusKey(candidate.id, platform.id);
     state.statuses[key] = 'checking';
-    renderResults();
+    atualizarStatusVisual(candidate.id, platform.id, 'checking');
 
     let resultado = 'unknown';
     if (platform.isDomain) {
@@ -167,29 +187,48 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     state.statuses[key] = resultado;
+    atualizarStatusVisual(candidate.id, platform.id, resultado);
     saveWorkspace();
-    renderResults();
   }
 
-  // Dispara a checagem de todos os candidatos para a plataforma ativa
-  async function verificarTodosAtivos() {
+  // Fila sequencial: 1 por 1 com intervalo para não tomar bloqueio
+  async function verificarFilaSequencial() {
+    if (emExecucao) return;
+    emExecucao = true;
+
+    const btnExecutar = document.getElementById('btn-executar-todos');
+    if (btnExecutar) {
+      btnExecutar.disabled = true;
+      btnExecutar.textContent = '⏳ Analisando lista...';
+    }
+
     const activePlatformId = state.selectedPlatforms[0];
-    const platform = PLATFORMS.find((p) => p.id === activePlatformId);
-    if (!platform) return;
+    const platform = PLATFORMS.find((p) => p.id === activePlatformId) || PLATFORMS[0];
 
     for (const candidate of state.candidates) {
-      await verificarAutomatico(candidate, platform);
+      await verificarItem(candidate, platform);
+      await sleep(400); // Pausa estratégica para respeitar limites de requisição
     }
+
+    if (btnExecutar) {
+      btnExecutar.disabled = false;
+      btnExecutar.textContent = '⚡ Verificar toda a lista';
+    }
+    emExecucao = false;
   }
 
-  // --- RENDERIZADORES ---
+  // --- RENDERIZAÇÃO ---
 
   function renderCandidates() {
     candidateCountEl.textContent = state.candidates.length.toString().padStart(2, '0');
     candidateListEl.innerHTML = '';
 
     if (!state.candidates.length) {
-      candidateListEl.innerHTML = `<li class="empty-state">Lista vazia</li>`;
+      candidateListEl.innerHTML = `
+        <li class="empty-state" style="padding: 18px 10px;">
+          <p style="font-size: 0.8rem; color: var(--text-subtle);">Nenhum nome adicionado</p>
+        </li>
+      `;
       return;
     }
 
@@ -198,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
       li.className = 'candidate-chip';
       li.innerHTML = `
         <code>${escapeHtml(candidate.name)}</code>
-        <button class="remove-button" type="button" aria-label="Remover">
+        <button class="remove-button" type="button" aria-label="Remover ${escapeHtml(candidate.name)}" title="Remover">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
         </button>
       `;
@@ -209,24 +248,50 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  function renderPlatformsBar() {
-    const count = state.selectedPlatforms.length;
-    platformCountEl.textContent = `${count} selecionada${count === 1 ? '' : 's'}`;
+  function renderPlatformsGrid() {
+    platformGridEl.innerHTML = '';
+    const activeId = state.selectedPlatforms[0] || 'registrobr';
 
-    platformButtons.forEach((btn) => {
-      const platformId = btn.getAttribute('data-testid')?.replace('button-platform-', '') || '';
-      const isSelected = state.selectedPlatforms.includes(platformId);
+    PLATFORMS.forEach((p) => {
+      const isSelected = p.id === activeId;
+      const btn = document.createElement('button');
+      btn.className = 'platform-button';
+      btn.type = 'button';
       btn.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+      btn.innerHTML = `<span class="platform-dot" aria-hidden="true"></span>${escapeHtml(p.name)}`;
+
+      btn.addEventListener('click', () => {
+        if (emExecucao) return;
+        state.selectedPlatforms = [p.id];
+        saveWorkspace();
+        renderPlatformsGrid();
+        renderResults();
+        verificarFilaSequencial();
+      });
+
+      platformGridEl.appendChild(btn);
     });
+
+    platformCountEl.textContent = '1 ativa';
   }
 
   function renderResults() {
     resultsContainerEl.innerHTML = '';
-    const activePlatformId = state.selectedPlatforms[0];
+    const activePlatformId = state.selectedPlatforms[0] || 'registrobr';
     const activePlatform = PLATFORMS.find((p) => p.id === activePlatformId) || PLATFORMS[0];
 
     if (activeHeadingEl) {
       activeHeadingEl.textContent = activePlatform.name;
+    }
+
+    if (!state.candidates.length) {
+      resultsContainerEl.innerHTML = `
+        <div class="empty-state">
+          <h3>Sua lista está vazia</h3>
+          <p>Adicione um ou mais nomes ao lado para verificar.</p>
+        </div>
+      `;
+      return;
     }
 
     state.candidates.forEach((candidate, index) => {
@@ -236,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const article = document.createElement('article');
       article.className = 'result-row';
-      article.style.animationDelay = `${index * 40}ms`;
+      article.style.animationDelay = `${index * 30}ms`;
 
       article.innerHTML = `
         <div class="result-name">
@@ -246,13 +311,13 @@ document.addEventListener('DOMContentLoaded', () => {
           </a>
         </div>
         <div class="result-status">
-          <div class="status-label">Status Detectado</div>
+          <div class="status-label">Resultado</div>
           <div class="status-control">
-            <span class="status-option ${currentStatus}">
-              ${STATUS_LABELS[currentStatus] || 'A verificar'}
+            <span class="status-option ${currentStatus}" data-status-badge="${candidate.id}-${activePlatform.id}">
+              ${STATUS_LABELS[currentStatus] || currentStatus}
             </span>
-            <button class="status-option check-btn" type="button" title="Consultar agora">
-              🔄 Checar
+            <button class="status-option check-btn" type="button" title="Consultar apenas este nome">
+              🔄
             </button>
           </div>
         </div>
@@ -264,18 +329,19 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `;
 
-      // Botão individual de checagem imediata
       article.querySelector('.check-btn').addEventListener('click', () => {
-        verificarAutomatico(candidate, activePlatform);
+        if (!emExecucao) {
+          verificarItem(candidate, activePlatform);
+        }
       });
 
       resultsContainerEl.appendChild(article);
     });
   }
 
-  // --- CONTROLES DE FORMULÁRIO ---
+  // --- FORMULÁRIO ---
 
-  addFormEl.addEventListener('submit', (e) => {
+  addFormEl.addEventListener('submit', async (e) => {
     e.preventDefault();
     const raw = candidateInputEl.value;
     const names = raw.split(/[\n,]+/).map((n) => n.trim().replace(/^@/, '')).filter(Boolean);
@@ -292,7 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (!added.length) {
-      formErrorEl.textContent = 'Nome vazio ou já existente.';
+      formErrorEl.textContent = 'Nenhum nome novo informado.';
       formErrorEl.style.display = 'block';
       return;
     }
@@ -305,32 +371,17 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCandidates();
     renderResults();
 
-    // Auto-verifica os novos nomes adicionados para a plataforma ativa
-    const activePlatform = PLATFORMS.find((p) => p.id === state.selectedPlatforms[0]);
-    if (activePlatform) {
-      added.forEach((candidate) => verificarAutomatico(candidate, activePlatform));
-    }
+    // Dispara a checagem sequencial automática
+    verificarFilaSequencial();
   });
 
   function removeCandidate(id) {
+    if (emExecucao) return;
     state.candidates = state.candidates.filter((c) => c.id !== id);
     saveWorkspace();
     renderCandidates();
     renderResults();
   }
-
-  // Alterna a plataforma ativa e re-renderiza
-  platformButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const platformId = btn.getAttribute('data-testid')?.replace('button-platform-', '');
-      if (!platformId) return;
-      state.selectedPlatforms = [platformId]; // Define como ativa
-      saveWorkspace();
-      renderPlatformsBar();
-      renderResults();
-      verificarTodosAtivos(); // Checa automaticamente a nova plataforma escolhida
-    });
-  });
 
   function escapeHtml(str) {
     return String(str).replace(/[&<>"']/g, (m) => ({
@@ -338,8 +389,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }[m]));
   }
 
+  // Vincula o botão de disparo manual
+  const btnExecutar = document.getElementById('btn-executar-todos');
+  if (btnExecutar) {
+    btnExecutar.addEventListener('click', () => {
+      verificarFilaSequencial();
+    });
+  }
+
   // Inicialização
   renderCandidates();
-  renderPlatformsBar();
+  renderPlatformsGrid();
   renderResults();
+  
+  // Roda uma verificação inicial da lista carregada
+  verificarFilaSequencial();
 });
