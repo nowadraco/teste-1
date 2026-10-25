@@ -5,6 +5,14 @@
     "site_url_br": "https://radarbyte.com.br",
     "site_url_com": "https://radarbyte.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/radarbyte/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/radarbyte"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@radarbyte"
@@ -12,6 +20,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@radarbyte"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/radarbyte"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@radarbyte"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/radarbyte/"
       },
       "Twitch": {
         "status": "taken",
@@ -29,13 +49,13 @@
         "status": "available",
         "url": "https://github.com/radarbyte"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/radarbyte"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/radarbyte"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@radarbyte"
       },
       "Pinterest": {
         "status": "taken",
@@ -48,6 +68,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/radarbyte"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/radarbyte"
       },
       "Blogger": {
         "status": "available",
@@ -69,6 +93,14 @@
     "site_url_br": "https://radar-byte.com.br",
     "site_url_com": "https://radar-byte.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/radar-byte/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/radar-byte"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@radar-byte"
@@ -76,6 +108,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@radar-byte"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/radar-byte"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@radar-byte"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/radar-byte/"
       },
       "Twitch": {
         "status": "taken",
@@ -93,13 +137,13 @@
         "status": "available",
         "url": "https://github.com/radar-byte"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/radar-byte"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/radar-byte"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@radar-byte"
       },
       "Pinterest": {
         "status": "taken",
@@ -112,6 +156,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/radar-byte"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/radar-byte"
       },
       "Blogger": {
         "status": "available",
@@ -133,6 +181,14 @@
     "site_url_br": "https://pulsodigital.com.br",
     "site_url_com": "https://pulsodigital.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/pulsodigital/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/pulsodigital"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@pulsodigital"
@@ -140,6 +196,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@pulsodigital"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/pulsodigital"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@pulsodigital"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/pulsodigital/"
       },
       "Twitch": {
         "status": "taken",
@@ -157,13 +225,13 @@
         "status": "available",
         "url": "https://github.com/pulsodigital"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/pulsodigital"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/pulsodigital"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@pulsodigital"
       },
       "Pinterest": {
         "status": "taken",
@@ -177,8 +245,12 @@
         "status": "available",
         "url": "https://dev.to/pulsodigital"
       },
-      "Blogger": {
+      "Steam": {
         "status": "taken",
+        "url": "https://steamcommunity.com/id/pulsodigital"
+      },
+      "Blogger": {
+        "status": "status_429",
         "url": "https://pulsodigital.blogspot.com"
       },
       "WordPress": {
@@ -197,6 +269,14 @@
     "site_url_br": "https://pulso-digital.com.br",
     "site_url_com": "https://pulso-digital.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/pulso-digital/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/pulso-digital"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@pulso-digital"
@@ -204,6 +284,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@pulso-digital"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/pulso-digital"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@pulso-digital"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/pulso-digital/"
       },
       "Twitch": {
         "status": "taken",
@@ -221,13 +313,13 @@
         "status": "available",
         "url": "https://github.com/pulso-digital"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/pulso-digital"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/pulso-digital"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@pulso-digital"
       },
       "Pinterest": {
         "status": "taken",
@@ -240,6 +332,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/pulso-digital"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/pulso-digital"
       },
       "Blogger": {
         "status": "taken",
@@ -261,6 +357,14 @@
     "site_url_br": "https://centralnerd.com.br",
     "site_url_com": "https://centralnerd.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/centralnerd/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/centralnerd"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@centralnerd"
@@ -268,6 +372,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@centralnerd"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/centralnerd"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@centralnerd"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/centralnerd/"
       },
       "Twitch": {
         "status": "taken",
@@ -285,13 +401,13 @@
         "status": "taken",
         "url": "https://github.com/centralnerd"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/centralnerd"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/centralnerd"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@centralnerd"
       },
       "Pinterest": {
         "status": "taken",
@@ -304,6 +420,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/centralnerd"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/centralnerd"
       },
       "Blogger": {
         "status": "taken",
@@ -325,6 +445,14 @@
     "site_url_br": "https://central-nerd.com.br",
     "site_url_com": "https://central-nerd.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/central-nerd/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/central-nerd"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@central-nerd"
@@ -332,6 +460,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@central-nerd"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/central-nerd"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@central-nerd"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/central-nerd/"
       },
       "Twitch": {
         "status": "taken",
@@ -349,13 +489,13 @@
         "status": "available",
         "url": "https://github.com/central-nerd"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/central-nerd"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/central-nerd"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@central-nerd"
       },
       "Pinterest": {
         "status": "taken",
@@ -368,6 +508,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/central-nerd"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/central-nerd"
       },
       "Blogger": {
         "status": "taken",
@@ -389,6 +533,14 @@
     "site_url_br": "https://sinaltech.com.br",
     "site_url_com": "https://sinaltech.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/sinaltech/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/sinaltech"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@sinaltech"
@@ -396,6 +548,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@sinaltech"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/sinaltech"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@sinaltech"
+      },
+      "LinkedIn": {
+        "status": "taken",
+        "url": "https://www.linkedin.com/company/sinaltech/"
       },
       "Twitch": {
         "status": "taken",
@@ -413,13 +577,13 @@
         "status": "available",
         "url": "https://github.com/sinaltech"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/sinaltech"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/sinaltech"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@sinaltech"
       },
       "Pinterest": {
         "status": "taken",
@@ -432,6 +596,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/sinaltech"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/sinaltech"
       },
       "Blogger": {
         "status": "taken",
@@ -453,6 +621,14 @@
     "site_url_br": "https://sinal-tech.com.br",
     "site_url_com": "https://sinal-tech.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/sinal-tech/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/sinal-tech"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@sinal-tech"
@@ -460,6 +636,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@sinal-tech"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/sinal-tech"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@sinal-tech"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/sinal-tech/"
       },
       "Twitch": {
         "status": "taken",
@@ -477,13 +665,13 @@
         "status": "taken",
         "url": "https://github.com/sinal-tech"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/sinal-tech"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/sinal-tech"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@sinal-tech"
       },
       "Pinterest": {
         "status": "taken",
@@ -496,6 +684,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/sinal-tech"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/sinal-tech"
       },
       "Blogger": {
         "status": "available",
@@ -517,6 +709,14 @@
     "site_url_br": "https://modotech.com.br",
     "site_url_com": "https://modotech.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/modotech/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/modotech"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@modotech"
@@ -524,6 +724,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@modotech"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/modotech"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@modotech"
+      },
+      "LinkedIn": {
+        "status": "taken",
+        "url": "https://www.linkedin.com/company/modotech/"
       },
       "Twitch": {
         "status": "taken",
@@ -541,13 +753,13 @@
         "status": "taken",
         "url": "https://github.com/modotech"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/modotech"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/modotech"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@modotech"
       },
       "Pinterest": {
         "status": "taken",
@@ -560,6 +772,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/modotech"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/modotech"
       },
       "Blogger": {
         "status": "available",
@@ -581,6 +797,14 @@
     "site_url_br": "https://modo-tech.com.br",
     "site_url_com": "https://modo-tech.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/modo-tech/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/modo-tech"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@modo-tech"
@@ -588,6 +812,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@modo-tech"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/modo-tech"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@modo-tech"
+      },
+      "LinkedIn": {
+        "status": "taken",
+        "url": "https://www.linkedin.com/company/modo-tech/"
       },
       "Twitch": {
         "status": "taken",
@@ -605,13 +841,13 @@
         "status": "taken",
         "url": "https://github.com/modo-tech"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/modo-tech"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/modo-tech"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@modo-tech"
       },
       "Pinterest": {
         "status": "taken",
@@ -624,6 +860,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/modo-tech"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/modo-tech"
       },
       "Blogger": {
         "status": "taken",
@@ -645,6 +885,14 @@
     "site_url_br": "https://nucleodigital.com.br",
     "site_url_com": "https://nucleodigital.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/nucleodigital/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/nucleodigital"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@nucleodigital"
@@ -652,6 +900,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@nucleodigital"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/nucleodigital"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@nucleodigital"
+      },
+      "LinkedIn": {
+        "status": "taken",
+        "url": "https://www.linkedin.com/company/nucleodigital/"
       },
       "Twitch": {
         "status": "taken",
@@ -669,13 +929,13 @@
         "status": "taken",
         "url": "https://github.com/nucleodigital"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/nucleodigital"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/nucleodigital"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@nucleodigital"
       },
       "Pinterest": {
         "status": "taken",
@@ -688,6 +948,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/nucleodigital"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/nucleodigital"
       },
       "Blogger": {
         "status": "taken",
@@ -709,6 +973,14 @@
     "site_url_br": "https://nucleo-digital.com.br",
     "site_url_com": "https://nucleo-digital.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/nucleo-digital/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/nucleo-digital"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@nucleo-digital"
@@ -716,6 +988,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@nucleo-digital"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/nucleo-digital"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@nucleo-digital"
+      },
+      "LinkedIn": {
+        "status": "taken",
+        "url": "https://www.linkedin.com/company/nucleo-digital/"
       },
       "Twitch": {
         "status": "taken",
@@ -733,13 +1017,13 @@
         "status": "taken",
         "url": "https://github.com/nucleo-digital"
       },
+      "GitLab": {
+        "status": "taken",
+        "url": "https://gitlab.com/nucleo-digital"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/nucleo-digital"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@nucleo-digital"
       },
       "Pinterest": {
         "status": "taken",
@@ -752,6 +1036,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/nucleo-digital"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/nucleo-digital"
       },
       "Blogger": {
         "status": "taken",
@@ -773,6 +1061,14 @@
     "site_url_br": "https://codigoaberto.com.br",
     "site_url_com": "https://codigoaberto.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/codigoaberto/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/codigoaberto"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@codigoaberto"
@@ -780,6 +1076,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@codigoaberto"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/codigoaberto"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@codigoaberto"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/codigoaberto/"
       },
       "Twitch": {
         "status": "taken",
@@ -797,13 +1105,13 @@
         "status": "taken",
         "url": "https://github.com/codigoaberto"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/codigoaberto"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/codigoaberto"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@codigoaberto"
       },
       "Pinterest": {
         "status": "taken",
@@ -816,6 +1124,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/codigoaberto"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/codigoaberto"
       },
       "Blogger": {
         "status": "taken",
@@ -837,6 +1149,14 @@
     "site_url_br": "https://codigo-aberto.com.br",
     "site_url_com": "https://codigo-aberto.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/codigo-aberto/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/codigo-aberto"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@codigo-aberto"
@@ -844,6 +1164,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@codigo-aberto"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/codigo-aberto"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@codigo-aberto"
+      },
+      "LinkedIn": {
+        "status": "taken",
+        "url": "https://www.linkedin.com/company/codigo-aberto/"
       },
       "Twitch": {
         "status": "taken",
@@ -861,13 +1193,13 @@
         "status": "taken",
         "url": "https://github.com/codigo-aberto"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/codigo-aberto"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/codigo-aberto"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@codigo-aberto"
       },
       "Pinterest": {
         "status": "taken",
@@ -881,8 +1213,12 @@
         "status": "available",
         "url": "https://dev.to/codigo-aberto"
       },
-      "Blogger": {
+      "Steam": {
         "status": "taken",
+        "url": "https://steamcommunity.com/id/codigo-aberto"
+      },
+      "Blogger": {
+        "status": "status_429",
         "url": "https://codigo-aberto.blogspot.com"
       },
       "WordPress": {
@@ -901,6 +1237,14 @@
     "site_url_br": "https://diariodochip.com.br",
     "site_url_com": "https://diariodochip.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/diariodochip/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/diariodochip"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@diariodochip"
@@ -908,6 +1252,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@diariodochip"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/diariodochip"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@diariodochip"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/diariodochip/"
       },
       "Twitch": {
         "status": "taken",
@@ -925,13 +1281,13 @@
         "status": "available",
         "url": "https://github.com/diariodochip"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/diariodochip"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/diariodochip"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@diariodochip"
       },
       "Pinterest": {
         "status": "taken",
@@ -944,6 +1300,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/diariodochip"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/diariodochip"
       },
       "Blogger": {
         "status": "available",
@@ -965,6 +1325,14 @@
     "site_url_br": "https://diario-do-chip.com.br",
     "site_url_com": "https://diario-do-chip.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/diario-do-chip/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/diario-do-chip"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@diario-do-chip"
@@ -972,6 +1340,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@diario-do-chip"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/diario-do-chip"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@diario-do-chip"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/diario-do-chip/"
       },
       "Twitch": {
         "status": "taken",
@@ -989,13 +1369,13 @@
         "status": "available",
         "url": "https://github.com/diario-do-chip"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/diario-do-chip"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/diario-do-chip"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@diario-do-chip"
       },
       "Pinterest": {
         "status": "taken",
@@ -1008,6 +1388,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/diario-do-chip"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/diario-do-chip"
       },
       "Blogger": {
         "status": "available",
@@ -1029,6 +1413,14 @@
     "site_url_br": "https://telaaberta.com.br",
     "site_url_com": "https://telaaberta.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/telaaberta/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/telaaberta"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@telaaberta"
@@ -1036,6 +1428,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@telaaberta"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/telaaberta"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@telaaberta"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/telaaberta/"
       },
       "Twitch": {
         "status": "taken",
@@ -1053,13 +1457,13 @@
         "status": "available",
         "url": "https://github.com/telaaberta"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/telaaberta"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/telaaberta"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@telaaberta"
       },
       "Pinterest": {
         "status": "taken",
@@ -1072,6 +1476,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/telaaberta"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/telaaberta"
       },
       "Blogger": {
         "status": "available",
@@ -1093,6 +1501,14 @@
     "site_url_br": "https://tela-aberta.com.br",
     "site_url_com": "https://tela-aberta.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/tela-aberta/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/tela-aberta"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@tela-aberta"
@@ -1100,6 +1516,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@tela-aberta"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/tela-aberta"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@tela-aberta"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/tela-aberta/"
       },
       "Twitch": {
         "status": "taken",
@@ -1117,13 +1545,13 @@
         "status": "available",
         "url": "https://github.com/tela-aberta"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/tela-aberta"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/tela-aberta"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@tela-aberta"
       },
       "Pinterest": {
         "status": "taken",
@@ -1137,8 +1565,12 @@
         "status": "available",
         "url": "https://dev.to/tela-aberta"
       },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/tela-aberta"
+      },
       "Blogger": {
-        "status": "available",
+        "status": "status_429",
         "url": "https://tela-aberta.blogspot.com"
       },
       "WordPress": {
@@ -1157,6 +1589,14 @@
     "site_url_br": "https://bitdiario.com.br",
     "site_url_com": "https://bitdiario.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/bitdiario/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/bitdiario"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@bitdiario"
@@ -1164,6 +1604,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@bitdiario"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/bitdiario"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@bitdiario"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/bitdiario/"
       },
       "Twitch": {
         "status": "taken",
@@ -1181,13 +1633,13 @@
         "status": "available",
         "url": "https://github.com/bitdiario"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/bitdiario"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/bitdiario"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@bitdiario"
       },
       "Pinterest": {
         "status": "taken",
@@ -1200,6 +1652,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/bitdiario"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/bitdiario"
       },
       "Blogger": {
         "status": "taken",
@@ -1221,6 +1677,14 @@
     "site_url_br": "https://bit-diario.com.br",
     "site_url_com": "https://bit-diario.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/bit-diario/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/bit-diario"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@bit-diario"
@@ -1228,6 +1692,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@bit-diario"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/bit-diario"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@bit-diario"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/bit-diario/"
       },
       "Twitch": {
         "status": "taken",
@@ -1245,13 +1721,13 @@
         "status": "available",
         "url": "https://github.com/bit-diario"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/bit-diario"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/bit-diario"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@bit-diario"
       },
       "Pinterest": {
         "status": "taken",
@@ -1265,8 +1741,12 @@
         "status": "available",
         "url": "https://dev.to/bit-diario"
       },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/bit-diario"
+      },
       "Blogger": {
-        "status": "available",
+        "status": "status_429",
         "url": "https://bit-diario.blogspot.com"
       },
       "WordPress": {
@@ -1285,6 +1765,14 @@
     "site_url_br": "https://fontetech.com.br",
     "site_url_com": "https://fontetech.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/fontetech/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/fontetech"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@fontetech"
@@ -1292,6 +1780,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@fontetech"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/fontetech"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@fontetech"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/fontetech/"
       },
       "Twitch": {
         "status": "taken",
@@ -1309,13 +1809,13 @@
         "status": "taken",
         "url": "https://github.com/fontetech"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/fontetech"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/fontetech"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@fontetech"
       },
       "Pinterest": {
         "status": "taken",
@@ -1328,6 +1828,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/fontetech"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/fontetech"
       },
       "Blogger": {
         "status": "taken",
@@ -1349,6 +1853,14 @@
     "site_url_br": "https://fonte-tech.com.br",
     "site_url_com": "https://fonte-tech.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/fonte-tech/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/fonte-tech"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@fonte-tech"
@@ -1356,6 +1868,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@fonte-tech"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/fonte-tech"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@fonte-tech"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/fonte-tech/"
       },
       "Twitch": {
         "status": "taken",
@@ -1373,13 +1897,13 @@
         "status": "available",
         "url": "https://github.com/fonte-tech"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/fonte-tech"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/fonte-tech"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@fonte-tech"
       },
       "Pinterest": {
         "status": "taken",
@@ -1392,6 +1916,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/fonte-tech"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/fonte-tech"
       },
       "Blogger": {
         "status": "available",
@@ -1413,6 +1941,14 @@
     "site_url_br": "https://sistemanerd.com.br",
     "site_url_com": "https://sistemanerd.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/sistemanerd/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/sistemanerd"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@sistemanerd"
@@ -1420,6 +1956,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@sistemanerd"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/sistemanerd"
+      },
+      "TikTok": {
+        "status": "error",
+        "url": "https://www.tiktok.com/@sistemanerd"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/sistemanerd/"
       },
       "Twitch": {
         "status": "taken",
@@ -1437,13 +1985,13 @@
         "status": "available",
         "url": "https://github.com/sistemanerd"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/sistemanerd"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/sistemanerd"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@sistemanerd"
       },
       "Pinterest": {
         "status": "taken",
@@ -1457,8 +2005,12 @@
         "status": "available",
         "url": "https://dev.to/sistemanerd"
       },
-      "Blogger": {
+      "Steam": {
         "status": "taken",
+        "url": "https://steamcommunity.com/id/sistemanerd"
+      },
+      "Blogger": {
+        "status": "status_429",
         "url": "https://sistemanerd.blogspot.com"
       },
       "WordPress": {
@@ -1477,6 +2029,14 @@
     "site_url_br": "https://sistema-nerd.com.br",
     "site_url_com": "https://sistema-nerd.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/sistema-nerd/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/sistema-nerd"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@sistema-nerd"
@@ -1484,6 +2044,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@sistema-nerd"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/sistema-nerd"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@sistema-nerd"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/sistema-nerd/"
       },
       "Twitch": {
         "status": "taken",
@@ -1501,13 +2073,13 @@
         "status": "available",
         "url": "https://github.com/sistema-nerd"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/sistema-nerd"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/sistema-nerd"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@sistema-nerd"
       },
       "Pinterest": {
         "status": "taken",
@@ -1520,6 +2092,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/sistema-nerd"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/sistema-nerd"
       },
       "Blogger": {
         "status": "taken",
@@ -1541,6 +2117,14 @@
     "site_url_br": "https://paineldigital.com.br",
     "site_url_com": "https://paineldigital.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/paineldigital/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/paineldigital"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@paineldigital"
@@ -1548,6 +2132,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@paineldigital"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/paineldigital"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@paineldigital"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/paineldigital/"
       },
       "Twitch": {
         "status": "taken",
@@ -1565,13 +2161,13 @@
         "status": "available",
         "url": "https://github.com/paineldigital"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/paineldigital"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/paineldigital"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@paineldigital"
       },
       "Pinterest": {
         "status": "taken",
@@ -1584,6 +2180,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/paineldigital"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/paineldigital"
       },
       "Blogger": {
         "status": "taken",
@@ -1605,6 +2205,14 @@
     "site_url_br": "https://painel-digital.com.br",
     "site_url_com": "https://painel-digital.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/painel-digital/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/painel-digital"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@painel-digital"
@@ -1612,6 +2220,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@painel-digital"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/painel-digital"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@painel-digital"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/painel-digital/"
       },
       "Twitch": {
         "status": "taken",
@@ -1629,13 +2249,13 @@
         "status": "available",
         "url": "https://github.com/painel-digital"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/painel-digital"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/painel-digital"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@painel-digital"
       },
       "Pinterest": {
         "status": "taken",
@@ -1648,6 +2268,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/painel-digital"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/painel-digital"
       },
       "Blogger": {
         "status": "status_429",
@@ -1669,6 +2293,14 @@
     "site_url_br": "https://zonabyte.com.br",
     "site_url_com": "https://zonabyte.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/zonabyte/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/zonabyte"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@zonabyte"
@@ -1676,6 +2308,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@zonabyte"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/zonabyte"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@zonabyte"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/zonabyte/"
       },
       "Twitch": {
         "status": "taken",
@@ -1693,13 +2337,13 @@
         "status": "available",
         "url": "https://github.com/zonabyte"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/zonabyte"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/zonabyte"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@zonabyte"
       },
       "Pinterest": {
         "status": "taken",
@@ -1713,8 +2357,12 @@
         "status": "available",
         "url": "https://dev.to/zonabyte"
       },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/zonabyte"
+      },
       "Blogger": {
-        "status": "available",
+        "status": "status_429",
         "url": "https://zonabyte.blogspot.com"
       },
       "WordPress": {
@@ -1733,6 +2381,14 @@
     "site_url_br": "https://zona-byte.com.br",
     "site_url_com": "https://zona-byte.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/zona-byte/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/zona-byte"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@zona-byte"
@@ -1740,6 +2396,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@zona-byte"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/zona-byte"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@zona-byte"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/zona-byte/"
       },
       "Twitch": {
         "status": "taken",
@@ -1757,13 +2425,13 @@
         "status": "available",
         "url": "https://github.com/zona-byte"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/zona-byte"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/zona-byte"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@zona-byte"
       },
       "Pinterest": {
         "status": "taken",
@@ -1776,6 +2444,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/zona-byte"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/zona-byte"
       },
       "Blogger": {
         "status": "taken",
@@ -1797,6 +2469,14 @@
     "site_url_br": "https://redecirurgica.com.br",
     "site_url_com": "https://redecirurgica.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/redecirurgica/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/redecirurgica"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@redecirurgica"
@@ -1804,6 +2484,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@redecirurgica"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/redecirurgica"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@redecirurgica"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/redecirurgica/"
       },
       "Twitch": {
         "status": "taken",
@@ -1821,13 +2513,13 @@
         "status": "available",
         "url": "https://github.com/redecirurgica"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/redecirurgica"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/redecirurgica"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@redecirurgica"
       },
       "Pinterest": {
         "status": "taken",
@@ -1840,6 +2532,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/redecirurgica"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/redecirurgica"
       },
       "Blogger": {
         "status": "available",
@@ -1861,6 +2557,14 @@
     "site_url_br": "https://rede-cirurgica.com.br",
     "site_url_com": "https://rede-cirurgica.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/rede-cirurgica/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/rede-cirurgica"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@rede-cirurgica"
@@ -1868,6 +2572,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@rede-cirurgica"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/rede-cirurgica"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@rede-cirurgica"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/rede-cirurgica/"
       },
       "Twitch": {
         "status": "taken",
@@ -1885,13 +2601,13 @@
         "status": "available",
         "url": "https://github.com/rede-cirurgica"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/rede-cirurgica"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/rede-cirurgica"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@rede-cirurgica"
       },
       "Pinterest": {
         "status": "taken",
@@ -1904,6 +2620,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/rede-cirurgica"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/rede-cirurgica"
       },
       "Blogger": {
         "status": "available",
@@ -1925,6 +2645,14 @@
     "site_url_br": "https://portalpixel.com.br",
     "site_url_com": "https://portalpixel.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/portalpixel/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/portalpixel"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@portalpixel"
@@ -1932,6 +2660,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@portalpixel"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/portalpixel"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@portalpixel"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/portalpixel/"
       },
       "Twitch": {
         "status": "taken",
@@ -1949,13 +2689,13 @@
         "status": "available",
         "url": "https://github.com/portalpixel"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/portalpixel"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/portalpixel"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@portalpixel"
       },
       "Pinterest": {
         "status": "taken",
@@ -1968,6 +2708,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/portalpixel"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/portalpixel"
       },
       "Blogger": {
         "status": "taken",
@@ -1989,6 +2733,14 @@
     "site_url_br": "https://portal-pixel.com.br",
     "site_url_com": "https://portal-pixel.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/portal-pixel/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/portal-pixel"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@portal-pixel"
@@ -1996,6 +2748,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@portal-pixel"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/portal-pixel"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@portal-pixel"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/portal-pixel/"
       },
       "Twitch": {
         "status": "taken",
@@ -2013,13 +2777,13 @@
         "status": "available",
         "url": "https://github.com/portal-pixel"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/portal-pixel"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/portal-pixel"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@portal-pixel"
       },
       "Pinterest": {
         "status": "taken",
@@ -2032,6 +2796,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/portal-pixel"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/portal-pixel"
       },
       "Blogger": {
         "status": "taken",
@@ -2053,6 +2821,14 @@
     "site_url_br": "https://circuitonerd.com.br",
     "site_url_com": "https://circuitonerd.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/circuitonerd/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/circuitonerd"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@circuitonerd"
@@ -2060,6 +2836,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@circuitonerd"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/circuitonerd"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@circuitonerd"
+      },
+      "LinkedIn": {
+        "status": "taken",
+        "url": "https://www.linkedin.com/company/circuitonerd/"
       },
       "Twitch": {
         "status": "taken",
@@ -2077,13 +2865,13 @@
         "status": "available",
         "url": "https://github.com/circuitonerd"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/circuitonerd"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/circuitonerd"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@circuitonerd"
       },
       "Pinterest": {
         "status": "taken",
@@ -2096,6 +2884,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/circuitonerd"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/circuitonerd"
       },
       "Blogger": {
         "status": "taken",
@@ -2117,6 +2909,14 @@
     "site_url_br": "https://circuito-nerd.com.br",
     "site_url_com": "https://circuito-nerd.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/circuito-nerd/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/circuito-nerd"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@circuito-nerd"
@@ -2124,6 +2924,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@circuito-nerd"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/circuito-nerd"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@circuito-nerd"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/circuito-nerd/"
       },
       "Twitch": {
         "status": "taken",
@@ -2141,13 +2953,13 @@
         "status": "available",
         "url": "https://github.com/circuito-nerd"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/circuito-nerd"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/circuito-nerd"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@circuito-nerd"
       },
       "Pinterest": {
         "status": "taken",
@@ -2160,6 +2972,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/circuito-nerd"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/circuito-nerd"
       },
       "Blogger": {
         "status": "available",
@@ -2181,6 +2997,14 @@
     "site_url_br": "https://ligadigital.com.br",
     "site_url_com": "https://ligadigital.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/ligadigital/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/ligadigital"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@ligadigital"
@@ -2188,6 +3012,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@ligadigital"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/ligadigital"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@ligadigital"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/ligadigital/"
       },
       "Twitch": {
         "status": "taken",
@@ -2205,13 +3041,13 @@
         "status": "taken",
         "url": "https://github.com/ligadigital"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/ligadigital"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/ligadigital"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@ligadigital"
       },
       "Pinterest": {
         "status": "taken",
@@ -2224,6 +3060,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/ligadigital"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/ligadigital"
       },
       "Blogger": {
         "status": "taken",
@@ -2245,6 +3085,14 @@
     "site_url_br": "https://liga-digital.com.br",
     "site_url_com": "https://liga-digital.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/liga-digital/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/liga-digital"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@liga-digital"
@@ -2252,6 +3100,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@liga-digital"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/liga-digital"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@liga-digital"
+      },
+      "LinkedIn": {
+        "status": "taken",
+        "url": "https://www.linkedin.com/company/liga-digital/"
       },
       "Twitch": {
         "status": "taken",
@@ -2262,20 +3122,20 @@
         "url": "https://bsky.app/profile/liga-digital.bsky.social"
       },
       "Telegram": {
-        "status": "available",
+        "status": "taken",
         "url": "https://t.me/liga-digital"
       },
       "GitHub": {
         "status": "available",
         "url": "https://github.com/liga-digital"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/liga-digital"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/liga-digital"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@liga-digital"
       },
       "Pinterest": {
         "status": "taken",
@@ -2288,6 +3148,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/liga-digital"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/liga-digital"
       },
       "Blogger": {
         "status": "taken",
@@ -2309,6 +3173,14 @@
     "site_url_br": "https://estacaotech.com.br",
     "site_url_com": "https://estacaotech.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/estacaotech/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/estacaotech"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@estacaotech"
@@ -2316,6 +3188,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@estacaotech"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/estacaotech"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@estacaotech"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/estacaotech/"
       },
       "Twitch": {
         "status": "taken",
@@ -2333,13 +3217,13 @@
         "status": "available",
         "url": "https://github.com/estacaotech"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/estacaotech"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/estacaotech"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@estacaotech"
       },
       "Pinterest": {
         "status": "taken",
@@ -2352,6 +3236,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/estacaotech"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/estacaotech"
       },
       "Blogger": {
         "status": "taken",
@@ -2373,6 +3261,14 @@
     "site_url_br": "https://estacao-tech.com.br",
     "site_url_com": "https://estacao-tech.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/estacao-tech/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/estacao-tech"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@estacao-tech"
@@ -2380,6 +3276,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@estacao-tech"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/estacao-tech"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@estacao-tech"
+      },
+      "LinkedIn": {
+        "status": "available",
+        "url": "https://www.linkedin.com/company/estacao-tech/"
       },
       "Twitch": {
         "status": "taken",
@@ -2397,13 +3305,13 @@
         "status": "available",
         "url": "https://github.com/estacao-tech"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/estacao-tech"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/estacao-tech"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@estacao-tech"
       },
       "Pinterest": {
         "status": "taken",
@@ -2416,6 +3324,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/estacao-tech"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/estacao-tech"
       },
       "Blogger": {
         "status": "available",
@@ -2437,6 +3349,14 @@
     "site_url_br": "https://nexotech.com.br",
     "site_url_com": "https://nexotech.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/nexotech/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/nexotech"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@nexotech"
@@ -2444,6 +3364,18 @@
       "YouTube": {
         "status": "taken",
         "url": "https://www.youtube.com/@nexotech"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/nexotech"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@nexotech"
+      },
+      "LinkedIn": {
+        "status": "taken",
+        "url": "https://www.linkedin.com/company/nexotech/"
       },
       "Twitch": {
         "status": "taken",
@@ -2461,13 +3393,13 @@
         "status": "taken",
         "url": "https://github.com/nexotech"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/nexotech"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/nexotech"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@nexotech"
       },
       "Pinterest": {
         "status": "taken",
@@ -2480,6 +3412,10 @@
       "Dev.to": {
         "status": "available",
         "url": "https://dev.to/nexotech"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/nexotech"
       },
       "Blogger": {
         "status": "taken",
@@ -2501,6 +3437,14 @@
     "site_url_br": "https://nexo-tech.com.br",
     "site_url_com": "https://nexo-tech.com",
     "redes": {
+      "Instagram": {
+        "status": "status_429",
+        "url": "https://www.instagram.com/nexo-tech/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/nexo-tech"
+      },
       "Threads": {
         "status": "taken",
         "url": "https://www.threads.net/@nexo-tech"
@@ -2508,6 +3452,18 @@
       "YouTube": {
         "status": "available",
         "url": "https://www.youtube.com/@nexo-tech"
+      },
+      "X (Twitter)": {
+        "status": "status_403",
+        "url": "https://x.com/nexo-tech"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@nexo-tech"
+      },
+      "LinkedIn": {
+        "status": "taken",
+        "url": "https://www.linkedin.com/company/nexo-tech/"
       },
       "Twitch": {
         "status": "taken",
@@ -2525,13 +3481,13 @@
         "status": "taken",
         "url": "https://github.com/nexo-tech"
       },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/nexo-tech"
+      },
       "Reddit": {
         "status": "status_403",
         "url": "https://www.reddit.com/user/nexo-tech"
-      },
-      "TikTok": {
-        "status": "taken",
-        "url": "https://www.tiktok.com/@nexo-tech"
       },
       "Pinterest": {
         "status": "taken",
@@ -2544,6 +3500,10 @@
       "Dev.to": {
         "status": "taken",
         "url": "https://dev.to/nexo-tech"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/nexo-tech"
       },
       "Blogger": {
         "status": "available",

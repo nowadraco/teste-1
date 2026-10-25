@@ -1,43 +1,35 @@
-import unicodedata
-import re
-
-def sanitizar_nome(texto):
-    # 1. Converte para minúsculas
-    texto = texto.lower().strip()
-    
-    # 2. Remove acentos (ex: Núcleo -> Nucleo)
-    texto = unicodedata.normalize('NFKD', texto)
-    texto = "".join([c for c in texto if not unicodedata.combining(c)])
-    
-    # 3. Remove espaços e caracteres especiais (ex: Lar em Teste -> laremteste)
-    texto = re.sub(r'[^a-z0-9]', '', texto)
-    
-    return texto
-
 import time
 import json
 import urllib.request
 import urllib.error
 
+# Mapeamento completo com 20 plataformas prioritárias
 PLATAFORMAS = {
+    "Instagram": "https://www.instagram.com/{user}/",
+    "Facebook": "https://www.facebook.com/{user}",
     "Threads": "https://www.threads.net/@{user}",
     "YouTube": "https://www.youtube.com/@{user}",
+    "X (Twitter)": "https://x.com/{user}",
+    "TikTok": "https://www.tiktok.com/@{user}",
+    "LinkedIn": "https://www.linkedin.com/company/{user}/",
     "Twitch": "https://www.twitch.tv/{user}",
     "Bluesky": "https://bsky.app/profile/{user}.bsky.social",
     "Telegram": "https://t.me/{user}",
     "GitHub": "https://api.github.com/users/{user}",
+    "GitLab": "https://gitlab.com/{user}",
     "Reddit": "https://www.reddit.com/user/{user}",
-    "TikTok": "https://www.tiktok.com/@{user}",
     "Pinterest": "https://www.pinterest.com/{user}/",
     "Medium": "https://medium.com/@{user}",
     "Dev.to": "https://dev.to/{user}",
+    "Steam": "https://steamcommunity.com/id/{user}",
     "Blogger": "https://{user}.blogspot.com",
     "WordPress": "https://{user}.wordpress.com",
     "Tumblr": "https://{user}.tumblr.com"
 }
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"
 }
 
 def checar_registro_br(dominio_sem_extensao):
@@ -97,7 +89,7 @@ def processar_lista(lista_nomes):
             url = url_template.format(user=nome)
             status = checar_rede(url, rede)
             
-            # Se for a API do GitHub, gera a URL amigável para navegação no HTML
+            # Se for a API do GitHub, gera a URL amigável do perfil para o navegador
             display_url = f"https://github.com/{nome}" if rede == "GitHub" else url
             
             item["redes"][rede] = {
@@ -115,15 +107,14 @@ def processar_lista(lista_nomes):
         json.dump(relatorio, f, ensure_ascii=False, indent=2)
 
     print("\n" + "=" * 50)
-    print("✨ Concluído! Relatório atualizado em: resultados.json")
+    print("✨ Concluído! Relatório salvo em: resultados.json")
     print("=" * 50 + "\n")
 
 def main():
     print("==============================================")
-    print("  BUSCADOR EXPANDIDO (DOMÍNIO + 14 REDES)     ")
+    print("  BUSCADOR DIRETO (DOMÍNIO + 20 REDES)        ")
     print("==============================================")
-    print("Separe vários nomes por vírgula.")
-    print("Exemplo: voxelhub, glitchquest, colabpixel\n")
+    print("Cole sua lista de nomes separados por vírgula exatamente como deseja testar.\n")
 
     while True:
         entrada = input("Digite os nomes (ou 'sair'): ").strip()
@@ -132,7 +123,8 @@ def main():
         if entrada.lower() == "sair":
             break
 
-        nomes = [n.strip().replace("@", "") for n in entrada.split(",") if n.strip()]
+        # Apenas divide por vírgula e remove espaços das pontas, sem alterar o nome
+        nomes = [n.strip() for n in entrada.split(",") if n.strip()]
         if nomes:
             processar_lista(nomes)
 
