@@ -1,0 +1,90 @@
+[
+  {
+    "nome": "NeuroByte",
+    "registro_br": "special",
+    "site_url_br": "https://NeuroByte.com.br",
+    "site_url_com": "https://NeuroByte.com",
+    "redes": {
+      "Instagram": {
+        "status": "taken",
+        "url": "https://www.instagram.com/NeuroByte/"
+      },
+      "Facebook": {
+        "status": "status_400",
+        "url": "https://www.facebook.com/NeuroByte"
+      },
+      "Threads": {
+        "status": "taken",
+        "url": "https://www.threads.net/@NeuroByte"
+      },
+      "YouTube": {
+        "status": "taken",
+        "url": "https://www.youtube.com/@NeuroByte"
+      },
+      "X (Twitter)": {
+        "status": "taken",
+        "url": "https://x.com/NeuroByte"
+      },
+      "TikTok": {
+        "status": "taken",
+        "url": "https://www.tiktok.com/@NeuroByte"
+      },
+      "LinkedIn": {
+        "status": "taken",
+        "url": "https://www.linkedin.com/company/NeuroByte/"
+      },
+      "Twitch": {
+        "status": "taken",
+        "url": "https://www.twitch.tv/NeuroByte"
+      },
+      "Bluesky": {
+        "status": "taken",
+        "url": "https://bsky.app/profile/NeuroByte.bsky.social"
+      },
+      "Telegram": {
+        "status": "taken",
+        "url": "https://t.me/NeuroByte"
+      },
+      "GitHub": {
+        "status": "taken",
+        "url": "https://github.com/NeuroByte"
+      },
+      "GitLab": {
+        "status": "status_403",
+        "url": "https://gitlab.com/NeuroByte"
+      },
+      "Reddit": {
+        "status": "taken",
+        "url": "https://www.reddit.com/user/NeuroByte"
+      },
+      "Pinterest": {
+        "status": "taken",
+        "url": "https://www.pinterest.com/NeuroByte/"
+      },
+      "Medium": {
+        "status": "status_403",
+        "url": "https://medium.com/@NeuroByte"
+      },
+      "Dev.to": {
+        "status": "taken",
+        "url": "https://dev.to/NeuroByte"
+      },
+      "Steam": {
+        "status": "taken",
+        "url": "https://steamcommunity.com/id/NeuroByte"
+      },
+      "Blogger": {
+        "status": "available",
+        "url": "https://NeuroByte.blogspot.com"
+      },
+      "WordPress": {
+        "status": "taken",
+        "url": "https://NeuroByte.wordpress.com"
+      },
+      "Tumblr": {
+        "status": "status_403",
+        "url": "https://NeuroByte.tumblr.com"
+      }
+    }
+  }
+]
